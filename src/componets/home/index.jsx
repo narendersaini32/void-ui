@@ -11,6 +11,7 @@ const Main = styled.div`
     position: absolute;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 `;
 
 const Home = () => (

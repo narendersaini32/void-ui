@@ -6,16 +6,16 @@ import {
 } from '../../../consts/colors/colors.json';
 
 const StyledContainer = styled.div`
-  padding: 10px ;
+  padding: 20px ;
   display: flex;
   justify-content: center;
+  flex-wrap:wrap;
 `;
 const FieldSet = styled.fieldset`
-  width: fit-content;
-  margin: auto;
+  max-width: 500px;
+  margin: 20px;
   border: 5px solid ${grey900};
   border-radius: 22px;
-  margin: 10px auto 42px auto;
   box-shadow: 4px 4px;
   background:${grey300};
   height: fit-content;
