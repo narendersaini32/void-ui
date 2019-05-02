@@ -58,7 +58,7 @@ Button.propTypes = {
   borderRadius: PropTypes.number,
 };
 Button.defaultProps = {
-  color: 'grey',
+  color: 'white',
   text: 'click me',
   textColor: 'black',
   border: 0,
