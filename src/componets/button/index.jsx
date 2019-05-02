@@ -62,7 +62,7 @@ Button.defaultProps = {
   text: 'click me',
   textColor: 'black',
   border: 0,
-  boxShadow: 2,
-  borderRadius: 7,
+  boxShadow: 1,
+  borderRadius: 5,
 };
 export default Button;

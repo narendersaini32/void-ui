@@ -16,7 +16,7 @@ const FieldSet = styled.fieldset`
   margin: 20px;
   border: 5px solid ${grey900};
   border-radius: 22px;
-  box-shadow: 4px 4px;
+  box-shadow: 6px 9px 5px 0px rgba(0,0,0,0.75);
   background:${grey300};
   height: fit-content;
 `;
