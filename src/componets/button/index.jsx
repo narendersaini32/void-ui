@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { grey600, grey500, grey800 } from '../../consts/colors/colors.json';
+import { grey600, grey500 } from '../../consts/colors/colors.json';
 
 const StyledButton = styled.button`
     border:1px solid ${grey500};
@@ -22,7 +22,7 @@ const StyledButton = styled.button`
     box-shadow: 0px 0px rgba(0, 0, 0, 0.2);
     }
     &:hover {
-    color:${grey800}
+    opacity:0.8;
     }
 `;
 const Button = () => <StyledButton type="button">Button</StyledButton>;
