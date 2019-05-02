@@ -88,5 +88,6 @@
     "bluegrey600": "#486581",
     "bluegrey700": "#334E68",
     "bluegrey800": "#243B53",
-    "bluegrey900": "#102A43"
+    "bluegrey900": "#102A43",
+    "backgroundColor": "#ddd"
   }

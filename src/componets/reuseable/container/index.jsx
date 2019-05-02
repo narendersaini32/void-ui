@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import {
-  grey900, grey300, grey700,
-} from '../../../consts/colors/colors.json';
+import { grey300 } from '../../../consts/colors/colors.json';
 
 const StyledContainer = styled.div`
   padding: 20px ;
@@ -14,7 +12,7 @@ const StyledContainer = styled.div`
 const FieldSet = styled.fieldset`
   max-width: 500px;
   margin: 20px;
-  border: 5px solid ${grey900};
+  border:0px;
   border-radius: 22px;
   box-shadow: 6px 9px 5px 0px rgba(0,0,0,0.75);
   background:${grey300};
@@ -25,7 +23,7 @@ const Legend = styled.legend`
   text-transform: capitalize;
   font-weight: 600;
   border-radius: 4px;
-  background:${grey700};
+  background:${grey300};
 `;
 
 const Container = ({ children, title }) => (

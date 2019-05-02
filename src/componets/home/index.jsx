@@ -1,13 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { grey700 } from '../../consts/colors/colors.json';
 import { Button } from '..';
 import { Container } from '../reuseable';
 
 const Main = styled.div`
     height: 100%;
     width: -webkit-fill-available;
-    background:${grey700};
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -16,6 +14,18 @@ const Main = styled.div`
 
 const Home = () => (
   <Main>
+    <Container title="rounded buttons">
+      <Button text="Default" textColor="black" borderRadius={20} />
+      <Button text="yellow" textColor="yellow" borderRadius={20} />
+      <Button text="red" textColor="red" borderRadius={20} />
+      <Button text="pink" textColor="pink" borderRadius={20} />
+      <Button text="cyan" textColor="cyan" borderRadius={20} />
+      <Button text="indigo" textColor="blue" borderRadius={20} />
+      <Button text="blue" textColor="blue" borderRadius={20} />
+      <Button text="yellowvivid" textColor="yellowvivid" borderRadius={20} />
+      <Button text="bluegrey" textColor="bluegrey" borderRadius={20} />
+
+    </Container>
     <Container title="Black Text Color">
       <Button text="Default" />
       <Button text="yellow" color="yellow" />
@@ -80,18 +90,7 @@ const Home = () => (
 
     </Container>
 
-    <Container title="rounded buttons">
-      <Button text="Default" textColor="black" borderRadius={20} />
-      <Button text="yellow" textColor="yellow" borderRadius={20} />
-      <Button text="red" textColor="red" borderRadius={20} />
-      <Button text="pink" textColor="pink" borderRadius={20} />
-      <Button text="cyan" textColor="cyan" borderRadius={20} />
-      <Button text="indigo" textColor="blue" borderRadius={20} />
-      <Button text="blue" textColor="blue" borderRadius={20} />
-      <Button text="yellowvivid" textColor="yellowvivid" borderRadius={20} />
-      <Button text="bluegrey" textColor="bluegrey" borderRadius={20} />
 
-    </Container>
   </Main>
 );
 
