@@ -11,7 +11,7 @@ const StyledButton = styled.button`
   cursor: pointer;
   background: ${props => props.primaryColor};
   border-radius: ${props => props.borderRadius}px;
-  box-shadow: ${props => `${props.boxShadow}px ${props.boxShadow}px`};
+  box-shadow: ${props => `${props.boxShadow}px ${props.boxShadow}px ${props.primaryColor}`};
   color: ${props => props.textColor};
   font-size: 19px;
   outline: none;
@@ -28,6 +28,8 @@ const StyledButton = styled.button`
     &:hover {
         background: ${props => props.textColor};
         color: ${props => props.primaryColor};
+         box-shadow: ${props => `${props.boxShadow}px ${props.boxShadow}px ${props.textColor}`};
+
   }
 `;
 const Button = ({

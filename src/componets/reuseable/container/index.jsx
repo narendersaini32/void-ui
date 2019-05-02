@@ -12,9 +12,8 @@ const StyledContainer = styled.div`
 const FieldSet = styled.fieldset`
   max-width: 500px;
   margin: 20px;
-  border:0px;
+  border:1px solid;
   border-radius: 22px;
-  box-shadow: 6px 9px 5px 0px rgba(0,0,0,0.75);
   background:${grey300};
   height: fit-content;
 `;

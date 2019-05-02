@@ -16,30 +16,18 @@ const Home = () => (
   <Main>
     <Container title="rounded buttons">
       <Button text="Default" textColor="black" borderRadius={20} />
-      <Button text="yellow" textColor="yellow" borderRadius={20} />
-      <Button text="red" textColor="red" borderRadius={20} />
-      <Button text="pink" textColor="pink" borderRadius={20} />
-      <Button text="cyan" textColor="cyan" borderRadius={20} />
-      <Button text="indigo" textColor="blue" borderRadius={20} />
-      <Button text="blue" textColor="blue" borderRadius={20} />
-      <Button text="yellowvivid" textColor="yellowvivid" borderRadius={20} />
-      <Button text="bluegrey" textColor="bluegrey" borderRadius={20} />
+      <Button text="yellow" textColor="black" color="yellow" borderRadius={20} />
+      <Button text="red" textColor="black" color="red" borderRadius={20} />
+      <Button text="pink" textColor="black" color="pink" borderRadius={20} />
+      <Button text="cyan" textColor="black" color="cyan" borderRadius={20} />
+      <Button text="indigo" textColor="black" color="indigo" borderRadius={20} />
+      <Button text="blue" textColor="black" color="blue" borderRadius={20} />
+      <Button text="yellowvivid" textColor="black" color="yellowvivid" borderRadius={20} />
+      <Button text="bluegrey" textColor="black" color="bluegrey" borderRadius={20} />
 
     </Container>
 
-    <Container title="white background">
-      <Button text="Default" textColor="grey" />
-      <Button text="yellow" textColor="yellow" />
-      <Button text="red" textColor="red" />
-      <Button text="pink" textColor="pink" />
-      <Button text="cyan" textColor="cyan" />
-      <Button text="indigo" textColor="indigo" />
-      <Button text="blue" textColor="blue" />
-      <Button text="yellowvivid" textColor="yellowvivid" />
-      <Button text="bluegrey" textColor="bluegrey" />
 
-
-    </Container>
     <Container title="white text color">
       <Button text="Default" textColor="black" />
       <Button text="yellow" color="yellow" textColor="white" />
@@ -54,15 +42,15 @@ const Home = () => (
 
     </Container>
     <Container title="with border and box shadow">
-      <Button text="Default" textColor="black" border={1} />
-      <Button text="yellow" textColor="yellow" border={1} />
-      <Button text="red" textColor="red" border={1} />
-      <Button text="pink" textColor="pink" border={1} />
-      <Button text="cyan" textColor="cyan" border={1} />
-      <Button text="indigo" textColor="indigo" border={1} />
-      <Button text="blue" textColor="blue" border={1} />
-      <Button text="yellowvivid" textColor="yellowvivid" border={1} />
-      <Button text="bluegrey" textColor="bluegrey" border={1} />
+      <Button text="Default" textColor="black" color="white" border={1} />
+      <Button text="yellow" textColor="black" color="yellow" border={1} />
+      <Button text="red" textColor="black" color="red" border={1} />
+      <Button text="pink" textColor="black" color="pink" border={1} />
+      <Button text="cyan" textColor="black" color="cyan" border={1} />
+      <Button text="indigo" textColor="black" color="indigo" border={1} />
+      <Button text="blue" textColor="black" color="blue" border={1} />
+      <Button text="yellowvivid" textColor="black" color="yellowvivid" border={1} />
+      <Button text="bluegrey" textColor="black" color="bluegrey" border={1} />
 
     </Container>
     <Container title="without boxShadow">
