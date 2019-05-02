@@ -10,12 +10,15 @@ const Main = styled.div`
 `;
 const Container = styled.div`
     padding: 100px 100px 100px 100px;
-
+    display: flex;
+    justify-content: center;
 `;
 const Home = () => (
   <Main>
     <Container>
-      <Button />
+      <Button text="awesome" />
+      <Button text="cancel" color="yellow" />
+      <Button text="ok" color="red" />
     </Container>
   </Main>
 );
