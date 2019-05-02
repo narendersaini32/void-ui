@@ -26,19 +26,7 @@ const Home = () => (
       <Button text="bluegrey" textColor="bluegrey" borderRadius={20} />
 
     </Container>
-    <Container title="Black Text Color">
-      <Button text="Default" />
-      <Button text="yellow" color="yellow" />
-      <Button text="red" color="red" />
-      <Button text="pink" color="pink" />
-      <Button text="cyan" color="cyan" />
-      <Button text="indigo" color="indigo" />
-      <Button text="blue" color="blue" />
-      <Button text="yellowvivid" color="yellowvivid" />
-      <Button text="bluegrey" color="bluegrey" />
 
-
-    </Container>
     <Container title="white background">
       <Button text="Default" textColor="grey" />
       <Button text="yellow" textColor="yellow" />
