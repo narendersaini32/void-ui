@@ -16,6 +16,7 @@ const FieldSet = styled.fieldset`
   margin: 10px auto 42px auto;
   box-shadow: 4px 4px;
   background:${grey300};
+  height: fit-content;
 `;
 
 const Legend = styled.legend`

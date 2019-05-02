@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import colors from '../../consts/colors/colors.json';
 
 const StyledButton = styled.button`
-    border:0px;
+    border:${props => `${props.border}px solid ${props.textColor}`};
     margin:10px;
     cursor: pointer;
     background: ${props => props.primaryColor};
     border-radius: 7px;
-    box-shadow: 2px 4px ;
-    color: black;
+    box-shadow: ${props => `${props.boxShadow}px ${props.boxShadow}px`};
+    color: ${props => props.textColor};
     font-size: 19px;
     outline: none;
     text-align: center;
@@ -27,15 +27,20 @@ const StyledButton = styled.button`
     opacity:0.8;
     }
 `;
-const Button = ({ text, color }) => {
+const Button = ({
+  text, color, textColor, border, boxShadow,
+}) => {
   const colorNumber = ['400', '500'];
-  const primaryColor = colors[color + colorNumber[1]];
-  const secondaryColor = colors[color + colorNumber[0]];
+  const primaryColor = colors[color + colorNumber[1]] || color;
+  const secondaryColor = colors[color + colorNumber[0]] || color;
   return (
     <StyledButton
       type="button"
       secondaryColor={secondaryColor}
       primaryColor={primaryColor}
+      textColor={textColor}
+      border={border}
+      boxShadow={boxShadow}
     >
       {text}
     </StyledButton>
@@ -44,9 +49,15 @@ const Button = ({ text, color }) => {
 Button.propTypes = {
   text: PropTypes.string,
   color: PropTypes.string,
+  textColor: PropTypes.string,
+  border: PropTypes.number,
+  boxShadow: PropTypes.number,
 };
 Button.defaultProps = {
   color: 'grey',
   text: 'click me',
+  textColor: 'black',
+  border: 0,
+  boxShadow: 2,
 };
 export default Button;
