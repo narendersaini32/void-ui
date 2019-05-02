@@ -8,7 +8,7 @@ import {
 const StyledContainer = styled.div`
   padding: 20px ;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap:wrap;
 `;
 const FieldSet = styled.fieldset`

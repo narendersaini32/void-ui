@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import colors from '../../consts/colors/colors.json';
 
 const StyledButton = styled.button`
-font-family: 'Dancing Script', cursive;
+  font-family: 'M PLUS 1p', sans-serif;
+  min-width:100px;
   border: ${props => `${props.border}px solid ${props.textColor}`};
   margin: 10px;
   cursor: pointer;
@@ -20,12 +21,13 @@ font-family: 'Dancing Script', cursive;
   padding: 7px 15px 7px 15px;
   text-transform: capitalize;
   &:active {
-    top: 4px;
-    position: relative;
-    box-shadow: 0px 0px;
-  }
-  &:hover {
-    opacity: 0.8;
+      top: 4px;
+      position: relative;
+      box-shadow: 0px 0px;
+    }
+    &:hover {
+        background: ${props => props.textColor};
+        color: ${props => props.primaryColor};
   }
 `;
 const Button = ({
