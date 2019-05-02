@@ -9,7 +9,7 @@ font-family: 'Dancing Script', cursive;
   margin: 10px;
   cursor: pointer;
   background: ${props => props.primaryColor};
-  border-radius: 7px;
+  border-radius: ${props => props.borderRadius}px;
   box-shadow: ${props => `${props.boxShadow}px ${props.boxShadow}px`};
   color: ${props => props.textColor};
   font-size: 19px;
@@ -29,7 +29,7 @@ font-family: 'Dancing Script', cursive;
   }
 `;
 const Button = ({
-  text, color, textColor, border, boxShadow,
+  text, color, textColor, border, boxShadow, borderRadius,
 }) => {
   const colorNumber = ['400', '500'];
   const primaryColor = colors[color + colorNumber[1]] || color;
@@ -43,6 +43,7 @@ const Button = ({
       textColor={textColorFinal}
       border={border}
       boxShadow={boxShadow}
+      borderRadius={borderRadius}
     >
       {text}
     </StyledButton>
@@ -54,6 +55,7 @@ Button.propTypes = {
   textColor: PropTypes.string,
   border: PropTypes.number,
   boxShadow: PropTypes.number,
+  borderRadius: PropTypes.number,
 };
 Button.defaultProps = {
   color: 'grey',
@@ -61,5 +63,6 @@ Button.defaultProps = {
   textColor: 'black',
   border: 0,
   boxShadow: 2,
+  borderRadius: 7,
 };
 export default Button;

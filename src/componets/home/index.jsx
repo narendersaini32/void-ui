@@ -90,6 +90,18 @@ const Home = () => (
       <Button text="bluregrey" textColor="bluregrey" color="white" boxShadow={0} border={1} />
 
     </Container>
+    <Container title="rounded buttons">
+      <Button text="Default" textColor="white" borderRadius={20} />
+      <Button text="yellow" textColor="yellow" color="white" borderRadius={20} />
+      <Button text="red" textColor="red" color="white" borderRadius={20} />
+      <Button text="pink" textColor="pink" color="white" borderRadius={20} />
+      <Button text="cyan" textColor="cyan" color="white" borderRadius={20} />
+      <Button text="indigo" textColor="blue" color="white" borderRadius={20} />
+      <Button text="blue" textColor="blue" color="white" borderRadius={20} />
+      <Button text="yellowvivid" textColor="yellowvivid" color="white" borderRadius={20} />
+      <Button text="bluregrey" textColor="bluregrey" color="white" borderRadius={20} />
+
+    </Container>
 
   </Main>
 );
