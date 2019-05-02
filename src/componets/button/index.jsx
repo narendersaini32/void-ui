@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import colors from '../../consts/colors/colors.json';
 
 const StyledButton = styled.button`
-    border:1px solid ${props => props.secondaryColor};
+    border:0px;
     margin:10px;
     cursor: pointer;
     background: ${props => props.primaryColor};
     border-radius: 7px;
-    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 4px ;
     color: black;
     font-size: 19px;
     outline: none;
@@ -21,7 +21,7 @@ const StyledButton = styled.button`
     &:active{
     top:4px;
     position:relative;
-    box-shadow: 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px ;
     }
     &:hover {
     opacity:0.8;
