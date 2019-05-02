@@ -18,7 +18,7 @@ const Home = () => (
     <Container>
       <Button text="awesome" />
       <Button text="cancel" color="yellow" />
-      <Button text="ok" color="red" />
+      <Button text="error!" color="red" />
     </Container>
   </Main>
 );
