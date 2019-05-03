@@ -3,7 +3,7 @@ import { Button } from '..';
 import { Container } from '../reuseable';
 
 const ButtonRender = () => (
-  <Container title="buttons UI" fontWeight={600} borderColor="black">
+  <Container title="button UI" fontWeight={600} borderColor="black">
     <Container title="rounded buttons">
       <Button text="Default" textColor="black" borderRadius={20} />
       <Button text="yellow" textColor="black" color="yellow" borderRadius={20} />

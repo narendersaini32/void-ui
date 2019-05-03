@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ButtonRender from './buttonRender';
+import InputRender from './inputRender';
 
 const Main = styled.div`
     height: 100%;
@@ -14,7 +15,7 @@ const Main = styled.div`
 const Home = () => (
   <Main>
     <ButtonRender />
-
+    <InputRender />
   </Main>
 );
 

@@ -10,6 +10,7 @@ const StyledContainer = styled.div`
   flex-wrap:wrap;
 `;
 const FieldSet = styled.fieldset`
+width: inherit;
   margin: 42px;
   border:1px solid ${props => props.borderColor};
   border-radius: 22px;

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import colors from '../../consts/colors/colors.json';
 
 const StyledButton = styled.button`
-  font-family: 'M PLUS 1p', sans-serif;
   min-width:100px;
   border: ${props => `${props.border}px solid ${props.textColor}`};
   margin: 10px;
