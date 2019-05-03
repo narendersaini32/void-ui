@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import colors from '../../consts/colors/colors.json';
 
 const StyledMain = styled.div`
 margin: 10px;
@@ -18,6 +19,7 @@ width: ${props => props.size}px;
   background:${props => props.background};
   color:${props => props.textColor};
   text-transform: uppercase;
+  border:2px solid white;
 `;
 const StyledImg = styled.img`
   width: 100%;
@@ -27,25 +29,29 @@ const StyledImg = styled.img`
 `;
 
 const Avatar = ({
-  src, size, letter, background, textColor,
-}) => (
-  <StyledMain size={size} background={background} textColor={textColor}>
-    {(letter && letter.substring(0, 2)) || <StyledImg src={src} />}
-  </StyledMain>
-);
+  src, size, letter, bgColor, textColor,
+}) => {
+  const colorNumber = ['400', '500'];
+  const background = colors[bgColor + colorNumber[1]] || bgColor;
+  return (
+    <StyledMain size={size} background={background} textColor={textColor}>
+      {(letter && letter.substring(0, 2)) || <StyledImg src={src} />}
+    </StyledMain>
+  );
+};
 
 Avatar.propTypes = {
   src: PropTypes.string,
   size: PropTypes.number,
   letter: PropTypes.string,
-  background: PropTypes.string,
+  bgColor: PropTypes.string,
   textColor: PropTypes.string,
 };
 Avatar.defaultProps = {
   src: 'https://i.kinja-img.com/gawker-media/image/upload/s--vSY-o42Q--/c_scale,f_auto,fl_progressive,q_80,w_800/ecq5rsk3n1nolujedskk.jpg',
   size: 40,
   letter: '',
-  background: 'black',
+  bgColor: 'black',
   textColor: 'white',
 };
 export default Avatar;

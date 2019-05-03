@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { grey300 } from '../../../consts/colors/colors.json';
+// import { grey200 } from '../../../consts/colors/colors.json';
 
 const StyledContainer = styled.div`
   padding: 20px ;
@@ -23,7 +23,8 @@ const Legend = styled.legend`
   text-transform: capitalize;
   font-weight: ${props => props.fontWeight};
   border-radius: 4px;
-  background:${grey300};
+  background:black;
+  color:white;
 `;
 
 const Container = ({
