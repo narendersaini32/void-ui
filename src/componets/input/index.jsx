@@ -23,7 +23,7 @@ const StyledLabel = styled.label`
 `;
 const StyledInput = styled.input`
   display: inline-block;
-  width: 320px;
+  max-width: 320px;
   height: 40px;
   box-sizing: border-box;
   outline: none;
