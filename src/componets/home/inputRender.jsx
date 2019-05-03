@@ -4,7 +4,7 @@ import { Container } from '../reuseable';
 
 
 const InputRender = () => (
-  <Container title="input UI" fontWeight={600} borderColor="black">
+  <Container title="input UI" fontWeight={600} borderColor="black" background="#9FB3C8" border={1}>
     <Container title="With Box Shadow">
       <Input />
       <Input bgColor="yellow" />

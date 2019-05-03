@@ -12,9 +12,9 @@ const StyledContainer = styled.div`
 const FieldSet = styled.fieldset`
 width: inherit;
   margin: 42px;
-  border:1px solid ${props => props.borderColor};
+  border: ${props => `${props.border}px solid ${props.borderColor}`};
   border-radius: 22px;
-  background:${grey300};
+  background:${props => props.background};
   height: fit-content;
 `;
 
@@ -26,9 +26,9 @@ const Legend = styled.legend`
 `;
 
 const Container = ({
-  children, title, fontWeight, borderColor,
+  children, title, fontWeight, borderColor, background, border,
 }) => (
-  <FieldSet borderColor={borderColor}>
+  <FieldSet borderColor={borderColor} background={background} border={border}>
     <Legend fontWeight={fontWeight}>{title}</Legend>
     <StyledContainer>{children}</StyledContainer>
   </FieldSet>
@@ -39,10 +39,14 @@ Container.propTypes = {
   title: PropTypes.string.isRequired,
   fontWeight: PropTypes.number,
   borderColor: PropTypes.string,
+  background: PropTypes.string,
+  border: PropTypes.number,
 };
 
 Container.defaultProps = {
   fontWeight: 100,
   borderColor: 'white',
+  background: 'black',
+  border: 0,
 };
 export default Container;
