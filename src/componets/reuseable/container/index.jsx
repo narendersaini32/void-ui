@@ -8,6 +8,7 @@ const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap:wrap;
+  align-items: center;
 `;
 const FieldSet = styled.fieldset`
 width: inherit;
