@@ -6,13 +6,12 @@ import { grey300 } from '../../../consts/colors/colors.json';
 const StyledContainer = styled.div`
   padding: 20px ;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap:wrap;
 `;
 const FieldSet = styled.fieldset`
-  max-width: 500px;
-  margin: 20px;
-  border:1px solid;
+  margin: 42px;
+  border:1px solid ${props => props.borderColor};
   border-radius: 22px;
   background:${grey300};
   height: fit-content;
@@ -20,14 +19,16 @@ const FieldSet = styled.fieldset`
 
 const Legend = styled.legend`
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: ${props => props.fontWeight};
   border-radius: 4px;
   background:${grey300};
 `;
 
-const Container = ({ children, title }) => (
-  <FieldSet>
-    <Legend>{title}</Legend>
+const Container = ({
+  children, title, fontWeight, borderColor,
+}) => (
+  <FieldSet borderColor={borderColor}>
+    <Legend fontWeight={fontWeight}>{title}</Legend>
     <StyledContainer>{children}</StyledContainer>
   </FieldSet>
 );
@@ -35,5 +36,12 @@ const Container = ({ children, title }) => (
 Container.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
+  fontWeight: PropTypes.number,
+  borderColor: PropTypes.string,
+};
+
+Container.defaultProps = {
+  fontWeight: 100,
+  borderColor: 'white',
 };
 export default Container;
