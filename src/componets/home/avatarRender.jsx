@@ -3,7 +3,7 @@ import { Avatar } from '..';
 import { Container } from '../reuseable';
 
 
-const InputRender = () => (
+const AvatarRender = () => (
   <Container title="avatar UI" fontWeight={600} borderColor="black" background="#9FB3C8" border={1}>
     <Container title="image avatar">
       <Avatar />
@@ -24,4 +24,4 @@ const InputRender = () => (
   </Container>
 );
 
-export default InputRender;
+export default AvatarRender;
