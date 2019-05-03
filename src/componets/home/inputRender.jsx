@@ -17,6 +17,17 @@ const InputRender = () => (
       <Input bgColor="bluegrey" />
     </Container>
     <Container title="Without Box Shadow">
+      <Input boxShadow={0} borderRadius={26} />
+      <Input bgColor="yellow" boxShadow={0} borderRadius={26} />
+      <Input bgColor="red" boxShadow={0} borderRadius={26} />
+      <Input bgColor="pink" boxShadow={0} borderRadius={26} />
+      <Input bgColor="cyan" boxShadow={0} borderRadius={26} />
+      <Input bgColor="indigo" boxShadow={0} borderRadius={26} />
+      <Input bgColor="blue" boxShadow={0} borderRadius={26} />
+      <Input bgColor="yellowvivid" boxShadow={0} borderRadius={26} />
+      <Input bgColor="bluegrey" boxShadow={0} borderRadius={26} />
+    </Container>
+    <Container title="Without Box Shadow">
       <Input boxShadow={0} />
       <Input bgColor="yellow" boxShadow={0} />
       <Input bgColor="red" boxShadow={0} />

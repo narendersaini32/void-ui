@@ -82,6 +82,6 @@ Input.defaultProps = {
   bgColor: 'white',
   textColor: 'black',
   borderRadius: 7,
-  boxShadow: 2,
+  boxShadow: 4,
 };
 export default Input;
