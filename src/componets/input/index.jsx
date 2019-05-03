@@ -31,7 +31,7 @@ const StyledInput = styled.input`
   border-radius: ${props => props.borderRadius}px;
   padding: 10px 10px 10px 100px;
   transition: all 0.1s ease-out;
-  box-shadow: ${props => `${props.boxShadow}px ${props.boxShadow}px ${props.background}`};
+  box-shadow: ${props => `${props.boxShadow - 1}px ${props.boxShadow}px ${props.background}`};
   &:focus {
     padding: 10px;
     transition: all 0.3s ease-out;
