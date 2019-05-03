@@ -20,7 +20,6 @@ const StyledLabel = styled.label`
   background: ${props => props.background};
   transform: translateZ(0) translateX(0);
   transition: all 0.3s ease-in;
-  transition-delay: 0.2s;
 `;
 const StyledInput = styled.input`
   display: inline-block;
@@ -43,7 +42,11 @@ const StyledInput = styled.input`
     transform: translateY(-120%) translateX(0%);
     transition: all 0.1s ease-out;
     border-radius: ${props => props.borderRadius}px;
-  }
+    }
+      &:hover +${StyledLabel} {
+        background: white;
+        color: black;
+      }
 `;
 
 const Input = ({
@@ -60,6 +63,7 @@ const Input = ({
         background={background}
         placeholder="Try typing something in here!"
         boxShadow={boxShadow}
+        textColor={textColor}
       />
       <StyledLabel background={background} borderRadius={borderRadius} textColor={textColor}>
         Name
